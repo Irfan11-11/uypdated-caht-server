@@ -6,7 +6,7 @@ const { v4: uuidv4 } = require("uuid");
 const httpServer = createServer();
 const io = new Server(httpServer, {
     cors: {
-        origin: "http://localhost:5173",
+        origin: "https://chatbox-messenger.vercel.app",
         methods: ["GET", "POST"],
     },
 });
